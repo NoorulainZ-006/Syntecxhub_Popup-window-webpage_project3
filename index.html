@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The EduCated | Excellence in Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container nav-wrapper">
+            <div class="logo">The <span>EduCated</span></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><button id="openModal" class="btn-signup">Join Now</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Unlock Your Potential with <span>Expert Guidance</span></h1>
+                    <p>Access high-quality courses from world-class instructors. Start your journey towards mastery today.</p>
+                    <div class="hero-btns">
+                        <a href="#courses" class="btn-primary">Browse Courses</a>
+                        <a href="#" class="btn-secondary">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="courses">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Popular Categories</h2>
+                    <p>Explore wide range of topics curated for modern learners.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Master HTML, CSS, JS and modern frameworks like React.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Data Science</h3>
+                        <p>Learn Python, Machine Learning and Data Visualization.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-pen-nib"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Design stunning user interfaces and experience flows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo">The <span>EduCated</span></div>
+                <p>Empowering learners worldwide through accessible and high-quality education technology.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The EduCated. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Create Free Account</h3>
+                <button id="closeModal" class="close-btn">&times;</button>
+            </div>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="email@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Min. 8 characters" required>
+                </div>
+                <button type="submit" class="btn-submit">Sign Up Today</button>
+                <p class="form-footer">Already have an account? <a href="#">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
